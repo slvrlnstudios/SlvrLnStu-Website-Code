@@ -1,0 +1,170 @@
+/* CSS Reset */
+*{
+	padding:0;
+	margin:0;
+	}
+
+#container, body, #content, aside, section{
+	display:block;
+	border: 1px gray solid;
+	}
+
+/* Basic Elements*/
+body{
+	font: 85% georgia, sans-serif;
+	line-height: 1.88889;
+	/*background: url(../images/mariologo.png) no-repeat top left;*/
+	background: url(../images/logonoglow.png) no-repeat top center;
+	}
+
+header{
+	background: url(../images/logonoglow.png) no-repeat top center;
+	}
+
+#container{
+	background: url(../images/toad.jpg) no-repeat bottom right;
+	}
+
+p{
+	text-align:justify;
+	padding
+	}
+
+h1{
+	font: italic bold 1.4em georgia, sans-serif;
+	margin: 0 3px 10px 35px;
+	text-align: right;
+	}
+
+h2{
+	font:italic bold georgia,sans-serif;
+	padding: 10px 10px 0 0;
+	}
+
+h3{
+
+	}
+
+a:link, a:visited{
+	color:black;
+	}
+
+a:hover{
+	color:white;
+	background:black;
+	}
+
+a:active{
+	color:gray;
+	background:black;
+	}
+
+
+
+/* Specific Divisions */
+#container{
+	padding: 115px 146px 0 146px;
+	}
+header{
+	
+	}
+
+	#navBar{
+		list-style:none;
+		width:100%;
+		}
+
+	#navBar li{
+		float:left;
+		width:19.74%;
+		text-align: center;
+		border-left: 1px solid;
+		border-right: 1px solid;
+		box-shadow: 3px 3px 7px #777;
+		-webkit-box-shadow: 3px 3px 5px #777;
+		}
+	
+	#navBar li a:link{
+		text-decoration: none;
+		display:block;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		color:white;
+		background: url(../images/button_default2.png) repeat-x;
+		padding:5px 10px;
+		}
+
+	#navBar li a:hover{
+		background: url(../images/button_default1.png) repeat-x;
+		color: white;
+		}
+	
+	#navBar li a:active{
+		background: url(../images/button_press1.png) repeat-x;
+		color: white;
+		}
+
+#content{
+	clear:both;
+	position:relative;
+	top: -2px;
+	}
+	
+	#content article img{
+		margin: 6px 15px 5px 10px;
+		float:left;
+		box-shadow: 3px 3px 7px #777;
+		-webkit-box-shadow: 3px 3px 5px #777;
+		}
+	
+	#content article h2{
+		padding-left: 10px;
+		}
+	#content article p{
+		line-height: 2.2em;
+		margin: 0 10px 10px 10px;
+		}
+
+	#content hr{
+		width: 80%;
+		margin: 10px 10%;
+		clear:both;
+		}
+	/* To fix collapsing effect of floated image */
+	#content article:after {
+  		content: ".";
+  		display: block;
+  		height: 0;
+  		clear: both;
+  		visibility: hidden;
+		}
+
+aside{
+	position:absolute;
+	margin:184px 10px 0 0;
+	right:0;
+	top:0;
+	width:165px;
+	}
+
+	aside h3{
+		padding:15px 0 10px 5px;
+		font-size: 14px;
+		}
+	
+	aside ol, ul{
+		list-style:none;
+		}
+	
+	aside li{
+		padding-left: 10px;
+		}
+
+footer{
+	margin: 20px 0px;
+	}
+	
+	footer p{
+		text-align: center;
+		font: 80% georgia, sans-serif;
+		}
